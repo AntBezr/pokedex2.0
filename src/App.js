@@ -1,15 +1,23 @@
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Layout from './pages/Layout'
+import Home from './components/Home';
 import PokemonTemplate from './components/PokemonTemplate';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <PokemonTemplate/>
-     <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            <Route index element={<Home/>}/>
+            <Route path="pokedex" element={<PokemonTemplate/>}/>
+          </Route>
+      </Routes>
+    
+      </BrowserRouter>
+     
     </div>
   );
 }
