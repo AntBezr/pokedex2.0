@@ -1,0 +1,15 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.card{
+  margin: 1rem;
+  width: 100px;
+  height: 150px;
+  border: solid black;
+}
+.name{
+  color: black;
+  display: flex;
+}
