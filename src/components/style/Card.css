@@ -4,12 +4,28 @@
   box-sizing: border-box;
 }
 .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 1rem;
-  width: 100px;
-  height: 150px;
+  width: 180px;
+  height: 250px;
   border: solid black;
+  background: #8bc57bb0;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(27, 27, 27);
 }
 .name{
   color: black;
   display: flex;
+  margin:0.5rem
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  max-width: 150px;
+  border-bottom: solid black;
 }

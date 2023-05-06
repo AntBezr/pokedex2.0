@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 .footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 10vh;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
 }

@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 function Layout(props) {
   return (
-    <div>
+    <div >
       <Header/>
       <Outlet/>
       <Footer/>
