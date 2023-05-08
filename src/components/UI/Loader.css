@@ -1,3 +1,11 @@
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
 .loader {
   width: 60px;
   height: 60px;

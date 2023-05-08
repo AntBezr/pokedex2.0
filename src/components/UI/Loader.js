@@ -1,9 +1,10 @@
 import React from 'react';
 import './Loader.css'
 
-function Loader() {
+function Loader(prps) {
   return (
-    <span class="loader"></span>
+  <div className='loading'><span className='loader'></span></div>
+    
   );
 }
 

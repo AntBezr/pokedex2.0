@@ -40,19 +40,18 @@ const searchFilter = pokeData.filter(pokemon=>{
 
 if (isLoding){
   return( 
-    <div className='loading'><Loader/></div>
-   
+    <Loader/>
     )
 
 }
   return (
 <div className='main'>
+  <div className='search'><h2>Find your pokemon:</h2>
 <input onChange={inputSearchHandler}></input>
-    <div className='template'>
-      
+</div>
 
+    <div className='template'>  
       {searchFilter.map(card=>{
-         console.log();
         return(
          
         <Card 

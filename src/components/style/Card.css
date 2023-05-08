@@ -10,9 +10,9 @@
   justify-content: center;
   margin: 1rem;
   width: 180px;
-  height: 250px;
+  height: 280px;
   border: solid black;
-  background: #8bc57bb0;
+  background: #b6ffa2b0;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgb(27, 27, 27);
 }
@@ -28,4 +28,11 @@
   height: 180px;
   max-width: 150px;
   border-bottom: solid black;
+}
+.seeMore{
+  color: black;
+  margin: 0.5rem;
+}
+.seeMore:visited{
+  color: rgb(0, 0, 0);
 }
