@@ -6,4 +6,9 @@
 .home{
   height: 80vh;
   width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(245, 245, 220, 0.308);
+  border-radius: 10px;
 }
