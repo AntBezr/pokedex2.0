@@ -13,6 +13,11 @@ pipeline {
          echo 'testing our app...'
         }
       }
+         stage("script") {
+        steps {
+         echo 'do some scripts...'
+        }
+      }
 
       stage("deploy") {
         steps {
