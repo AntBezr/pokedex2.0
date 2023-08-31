@@ -9,11 +9,13 @@ function Header(props) {
       <h1>Pokedex 2.0</h1>
       </Link>
       </div>
-      <div className='navigation'></div>
-      <ul>
+    
+      <ul className='navigation'>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/pokedex'>Pokedex</NavLink></li>
       </ul>
+    
+     
     </div>
   );
 }
