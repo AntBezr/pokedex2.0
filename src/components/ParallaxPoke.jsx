@@ -1,17 +1,19 @@
-import React from 'react';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import './style/ParallaxPoke.css'
-import PokeInfo from './PokeInfo'
-import { useNavigate } from 'react-router-dom';
-import stones from '../images/parallax/1stones.png' 
-import field from '../images/parallax/2field.png' 
-import lake from '../images/parallax/3lake2.png' 
-import rock from '../images/parallax/4rock.png' 
-import forest from '../images/parallax/5forest.png' 
-import mountains from '../images/parallax/6mountains2.png' 
-import clouds from '../images/parallax/7clouds.png' 
-import sky from '../images/parallax/8sky2.png' 
+
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+
 import Button from './UI/Button';
+import PokeInfo from './PokeInfo'
+import React from 'react';
+import clouds from '../images/parallax/7clouds.png'
+import field from '../images/parallax/2field.png'
+import forest from '../images/parallax/5forest.png'
+import lake from '../images/parallax/3lake2.png'
+import mountains from '../images/parallax/6mountains2.png'
+import rock from '../images/parallax/4rock.png'
+import sky from '../images/parallax/8sky2.png'
+import stones from '../images/parallax/1stones.png'
+import { useNavigate } from 'react-router-dom';
 
 const ParallaxPoke = ({ image, name, pokeData }) => {
   const navigation = useNavigate()

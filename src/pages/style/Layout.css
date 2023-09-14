@@ -4,24 +4,11 @@
   box-sizing: border-box;
 }
 
-.header {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
-}
 
 .content {
   min-height: 80vh;
 }
 
-.footer {
-  height: 10vh;
-}
 
 a {
   color: white;

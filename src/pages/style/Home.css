@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 .home{
-  height: 80vh;
-  width: 100vh;
+  height: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
-  background-color: rgba(245, 245, 220, 0.308);
+  flex-direction: row;
+  background-color: rgba(245, 245, 220, 0.496);
   border-radius: 10px;
+
 }
