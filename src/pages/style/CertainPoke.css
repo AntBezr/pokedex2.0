@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutPoke {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.picture {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture img {
+  max-height: 30vh;
+  min-height: 30vh;
+  max-width: 45vw;
+}
+
+.description {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#515200, #151502 );
+  color: rgb(255, 252, 239);
+  z-index: -2;
+  position: absolute;
+}
+
+.pokeTypes {
+  display: flex;
+  flex-direction: row;
+}
