@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Loader from "../components/UI/Loader";
 import "./style/CertainPoke.css";
 import ParallaxPoke from "../components/ParallaxPoke";

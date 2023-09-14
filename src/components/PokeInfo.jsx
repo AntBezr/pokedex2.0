@@ -1,16 +1,15 @@
 import React from 'react';
+import Button from './UI/Button';
 
 const PokeInfo = ({ stats, name, types }) => {
   return (
-    <div>
+    <div className='twoArticles'>
+        <h1 className='pokeName'>{name}</h1>
       <article>
-        <h1>{name}</h1>
         <div className='pokeTypes'>
           <h3>Type:</h3>
-          {types?.map((types) => (types.type.name)).join(' ')}
+         <h3> {types?.map((types) =>(types.type.name)).join(' ')}</h3>
         </div>
-      </article>
-      <article>
         <h3>Stats:</h3>
         {stats?.map((stats) => {
           return (
@@ -19,7 +18,6 @@ const PokeInfo = ({ stats, name, types }) => {
             </h4>
           );
         })}
-
       </article>
     </div>
   );

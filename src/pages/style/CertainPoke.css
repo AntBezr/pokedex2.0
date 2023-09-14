@@ -34,12 +34,44 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(#515200, #151502 );
-  color: rgb(255, 252, 239);
-  z-index: -2;
   position: absolute;
 }
 
 .pokeTypes {
   display: flex;
   flex-direction: row;
+}
+
+.infoAboutPoke{
+  color: rgb(255, 252, 239);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.twoArticles{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1290px;
+  width: 100%;
+}
+
+.twoArticles h3,h4 {
+  margin: 10px;
+}
+.twoArticles article{
+  height: 50vh;
+  width: 300px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: rgba(234, 234, 234, 0.1) 0px 10px 50px;
+}
+
+.pokeName{
+  font-size: 75px;
 }
