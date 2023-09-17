@@ -1,10 +1,7 @@
 .header {
   width: 100vw;
   height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1.5rem;
+
   background: rgba(0, 0, 0, 0.6);
   z-index: 10;
 }
@@ -13,7 +10,7 @@
   list-style-type: none;
 }
 
-.header .navigation {
+.header .wrapper .navigation {
   display: flex;
   flex-direction: row;
   width: 300px;
@@ -28,10 +25,20 @@ nav-link {
 }
 
 .nav-link:hover {
-  background: radial-gradient(rgba(255, 255, 255, 0.127) 50%, rgba(0, 0, 0, 0.6))
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
 }
 
 #logo {
   width: 50px;
+}
 
+.wrapper {
+  max-width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
 }

@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  max-width: 1290px;
-  height: 100%;
+  height: 80vh;
+  background: black url('../../images/wallhaven-6q75gx.png')no-repeat center center/contain fixed;
 }
 
 .modal {
@@ -13,12 +13,13 @@
   align-items: center;
   justify-content: space-around;
   color: aliceblue;
-  background-color: rgba(49, 49, 49, 0.713);
+
   min-width: 300px;
   min-height: 600px;
-  width: 50vw;
+  width: 40vw;
   border-radius: 20px;
   font-size: 50px;
+  margin-left: 40vw;
 }
 
 .modal h2 {

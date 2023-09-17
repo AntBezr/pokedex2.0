@@ -20,7 +20,7 @@ const ParallaxPoke = ({ image, name, pokeData }) => {
 
   return (
     <div className='parallaxPlusInfo'>
-      <Parallax pages={2} className='animation' style={{ height: "80vh" }} >
+      <Parallax pages={3} className='animation' style={{ height: "80vh" }} >
 
         <ParallaxLayer offset={0} speed={-0.01} className='animationLayer parallax' id='sky'>
           <img src={sky} className='parallaxPic' alt="sky" />
@@ -58,12 +58,15 @@ const ParallaxPoke = ({ image, name, pokeData }) => {
         <ParallaxLayer offset={0} speed={0.5} className='animationLayer parallax' id='stones'>
           <img src={stones} className='parallaxPic' alt="stones" />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0}>
+        <ParallaxLayer offset={1.5} speed={0.5}>
           <div className="infoAboutPoke">
             <PokeInfo pokeData={pokeData} />
             <Button onClickAction={() => navigation("/pokedex")} text={"Go back"} />
 
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0} className='animationLayer parallax'>
+          <div className="empty"></div>
         </ParallaxLayer>
       </Parallax>
 
