@@ -1,34 +1,25 @@
-/* 
-.parallaxPic{
-  display: flex;
-  align-items: 'center';
-  justify-content: center;
-  object-fit: cover;
-} */  
-
-.animation{
+.animation {
   display: block;
   position: relative;
 }
 
-.parallaxPic{
+.parallaxPic {
   width: 100vw;
   position: absolute;
   height: 80vh;
 }
 
-#pokemon{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding-top: 30vh;
-position: absolute;
-z-index: 2;
+#pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30vh;
+  position: absolute;
+  z-index: 2;
 }
 
 #pokemon img {
-  max-width: 300px;
+  width: 300px;
   height: auto;
 }
-

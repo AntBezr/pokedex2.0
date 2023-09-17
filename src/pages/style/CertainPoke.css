@@ -6,6 +6,7 @@
 
 .aboutPoke {
   width: 100vw;
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -13,7 +14,7 @@
 
 .picture {
   height: 90vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#515200, #151502 );
+  background: linear-gradient(#515200, #151502);
   position: absolute;
 }
 
@@ -42,7 +43,7 @@
   flex-direction: row;
 }
 
-.infoAboutPoke{
+.infoAboutPoke {
   color: rgb(255, 252, 239);
   width: 100%;
   display: flex;
@@ -52,7 +53,7 @@
   height: 80vh;
 }
 
-.twoArticles{
+.twoArticles {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -61,17 +62,26 @@
   width: 100%;
 }
 
-.twoArticles h3,h4 {
+.twoArticles h3,
+h4 {
   margin: 10px;
 }
-.twoArticles article{
-  height: 50vh;
-  width: 300px;
+
+.twoArticles article {
+  min-height: 50vh;
+  min-width: 300px;
+  width: 40vw;
   border-radius: 15px;
   padding: 10px;
-  box-shadow: rgba(234, 234, 234, 0.1) 0px 10px 50px;
+
 }
 
-.pokeName{
+.pokeName {
   font-size: 75px;
+}
+
+@media screen and (max-width: 900px) {
+  .twoArticles {
+    flex-direction: column;
+  }
 }

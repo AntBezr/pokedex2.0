@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
 
+:root {
+  --whiteText: whitesmoke;
+  --white: ;
+}
 
 * {
   margin: 0;
@@ -9,8 +13,6 @@
 }
 
 .App {
-  background: url('./images/pokemonBg.jpeg') no-repeat center center/cover fixed;
+  background: url('./images/wallhaven-1jq9r3.png') no-repeat center center/cover fixed;
   filter: brightness(0.8)
 }
-
-

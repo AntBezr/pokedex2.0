@@ -1,17 +1,18 @@
-.missingPath{
+.missingPath {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
+  max-width: 1290px;
   height: 100%;
 }
 
-.modal{
+.modal {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-color: aliceblue;
+  color: aliceblue;
   background-color: rgba(49, 49, 49, 0.713);
   min-width: 300px;
   min-height: 600px;
@@ -20,6 +21,6 @@ color: aliceblue;
   font-size: 50px;
 }
 
-.modal h2{
+.modal h2 {
   margin: 40px;
 }

@@ -1,9 +1,10 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-.card{
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,16 +13,20 @@
   width: 280px;
   height: 380px;
   border: solid black;
-  background: #dbfcebba;
+  background: #28372fba;
+  color: white;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgb(27, 27, 27);
 }
-.name{
-  color: black;
+
+.name {
+  color: rgb(255, 255, 255);
   display: flex;
-  margin:0.5rem
+  margin: 0.5rem;
+  font-size: 30px;
 }
-.image{
+
+.image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +34,13 @@
   max-width: 150px;
   border-bottom: solid black;
 }
-.seeMore{
-  color: black;
+
+.seeMore {
+  color: rgb(255, 255, 255);
   margin: 0.5rem;
+  font-size: 20px;
 }
-.seeMore:visited{
-  color: rgb(0, 0, 0);
+
+.seeMore:visited {
+  color: rgb(224, 224, 224);
 }

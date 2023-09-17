@@ -19,64 +19,55 @@ const ParallaxPoke = ({ image, name, pokeData }) => {
   const navigation = useNavigate()
 
   return (
-    <div  >
-    <Parallax pages={2} className='animation' style={{height: "80vh"}} > 
+    <div className='parallaxPlusInfo'>
+      <Parallax pages={2} className='animation' style={{ height: "80vh" }} >
 
-       <ParallaxLayer offset={0} speed={-0.01} className='animationLayer parallax' id='sky'> 
+        <ParallaxLayer offset={0} speed={-0.01} className='animationLayer parallax' id='sky'>
           <img src={sky} className='parallaxPic' alt="sky" />
-         </ParallaxLayer> 
+        </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={0.1} className='animationLayer parallax' id='clouds'>
-        <img src={clouds} className='parallaxPic' alt="clouds" />
-        </ParallaxLayer> 
-
-         <ParallaxLayer offset={0} speed={0.2} className='animationLayer parallax' id='mountains'> 
-        <img src={mountains} className='parallaxPic' alt="mountains" />
-         </ParallaxLayer> 
-
-         <ParallaxLayer offset={0} speed={0.25} className='animationLayer parallax' id='forest'> 
-        <img src={forest} className='parallaxPic' alt="forest" />
-        </ParallaxLayer> 
- 
-        <ParallaxLayer offset={0} speed={0.3} className='animationLayer parallax' id='rock'> 
-        <img src={rock} className='parallaxPic' alt="rock" />
-         </ParallaxLayer> 
-
-        <ParallaxLayer offset={0} speed={0.35} className='animationLayer parallax' id='lake'> 
-        <img src={lake} className='parallaxPic' alt="lake" />
-        </ParallaxLayer> 
-
-        <ParallaxLayer offset={0} speed={0.4} className='animationLayer parallax' id='field'> 
-        <img src={field} className='parallaxPic' alt="field" />
+          <img src={clouds} className='parallaxPic' alt="clouds" />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.6} className='animationLayer parallax' id='pokemon'> 
+
+        <ParallaxLayer offset={0} speed={0.2} className='animationLayer parallax' id='mountains'>
+          <img src={mountains} className='parallaxPic' alt="mountains" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.25} className='animationLayer parallax' id='forest'>
+          <img src={forest} className='parallaxPic' alt="forest" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.3} className='animationLayer parallax' id='rock'>
+          <img src={rock} className='parallaxPic' alt="rock" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.35} className='animationLayer parallax' id='lake'>
+          <img src={lake} className='parallaxPic' alt="lake" />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={0} speed={0.4} className='animationLayer parallax' id='field'>
+          <img src={field} className='parallaxPic' alt="field" />
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.6} className='animationLayer parallax' id='pokemon'>
           <img
             src={image}
             alt={name}
           />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5} className='animationLayer parallax' id='stones'> 
-        <img src={stones} className='parallaxPic' alt="stones" />
-         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0} className='animationLayer parallax' id='info'> 
-          <div className="description">
-          
+        <ParallaxLayer offset={0} speed={0.5} className='animationLayer parallax' id='stones'>
+          <img src={stones} className='parallaxPic' alt="stones" />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0}>
+          <div className="infoAboutPoke">
+            <PokeInfo pokeData={pokeData} />
+            <Button onClickAction={() => navigation("/pokedex")} text={"Go back"} />
+
           </div>
-      </ParallaxLayer> 
-      <ParallaxLayer offset={1} speed={0}>
-        <div   className="infoAboutPoke">
-      <PokeInfo
-              stats={pokeData.stats}
-              types={pokeData.types}
-              name={pokeData.name}
-            
-            />
-              <Button onClickAction={() => navigation("/pokedex")} text={"Go back"}/>
-          
-        </div>
-      </ParallaxLayer>
-     </Parallax> 
-    </div>
+        </ParallaxLayer>
+      </Parallax>
+
+    </div >
   );
 };
 

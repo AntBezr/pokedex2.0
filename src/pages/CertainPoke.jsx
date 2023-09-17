@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from "react";
+import "./style/CertainPoke.css";
+
+import React, {useEffect, useState} from "react";
+
+import Loader from "../components/UI/Loader";
+import ParallaxPoke from "../components/ParallaxPoke";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Loader from "../components/UI/Loader";
-import "./style/CertainPoke.css";
-import ParallaxPoke from "../components/ParallaxPoke";
 
 function CertainPoke() {
   const params = useParams();
@@ -31,7 +33,8 @@ function CertainPoke() {
       <ParallaxPoke
         image={pokeData.sprites?.other.dream_world.front_default}
         name={pokeData.name}
-        pokeData={pokeData} />
+        pokeData={pokeData} 
+        />
     </div >
   );
 }
