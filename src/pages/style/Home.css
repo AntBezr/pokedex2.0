@@ -21,7 +21,7 @@
   margin-top: 50px;
 }
 
-.wrapper {
+.home .wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -34,4 +34,20 @@
 .textGreeting {
   margin-right: 80px;
   width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 30px;
+    margin: 20px auto;
+  }
+
+  .home .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .textGreeting {
+    margin: 20px auto;
+    width: 80vw;
+  }
 }

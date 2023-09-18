@@ -14,13 +14,13 @@
   height: 380px;
   border: solid black;
   background: #28372fba;
-  color: white;
+  color: var(--whiteText);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgb(27, 27, 27);
 }
 
 .name {
-  color: rgb(255, 255, 255);
+  color: var(--whiteText);
   display: flex;
   margin: 0.5rem;
   font-size: 30px;
@@ -36,7 +36,7 @@
 }
 
 .seeMore {
-  color: rgb(255, 255, 255);
+  color: var(--whiteText);
   margin: 0.5rem;
   font-size: 20px;
 }

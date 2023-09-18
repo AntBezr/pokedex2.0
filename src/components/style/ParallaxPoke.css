@@ -21,5 +21,74 @@
 
 #pokemon img {
   width: 300px;
+  max-height: 300px;
   height: auto;
+}
+
+.infoAboutPoke {
+  color: var(--whiteText);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.pokemonDescription {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1290px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.pokemonDescription h3,
+h4 {
+  margin: 10px;
+}
+
+.pokemonDescription article {
+  min-height: 50vh;
+  min-width: 300px;
+  width: 30vw;
+  border-radius: 15px;
+  padding: 10px;
+
+}
+
+.pokeName {
+  font-size: 75px;
+}
+
+.empty {
+  min-height: 80vh;
+  width: 300px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .parallaxPic {
+    width: auto;
+    position: absolute;
+    height: 80vh;
+  }
+
+  #pokemon img {
+    width: 250px;
+  }
+
+  .pokeName {
+    font-size: 50px;
+  }
+
+  .pokemonDescription {
+    flex-direction: column;
+  }
+
+  .pokemonDescription h3 {
+    font-size: 15px;
+  }
 }

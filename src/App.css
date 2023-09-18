@@ -2,7 +2,11 @@
 
 :root {
   --whiteText: whitesmoke;
-  --white: ;
+  --yelow: #dac44a;
+  --darkYelow: #b9a740;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
 }
 
 * {
@@ -10,6 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  overscroll-behavior-y: none;
 }
 
 .App {

@@ -58,7 +58,7 @@ const ParallaxPoke = ({ image, name, pokeData }) => {
         <ParallaxLayer offset={0} speed={0.5} className='animationLayer parallax' id='stones'>
           <img src={stones} className='parallaxPic' alt="stones" />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.5} speed={0.5}>
+        <ParallaxLayer offset={1} speed={0.5}>
           <div className="infoAboutPoke">
             <PokeInfo pokeData={pokeData} />
             <Button onClickAction={() => navigation("/pokedex")} text={"Go back"} />
