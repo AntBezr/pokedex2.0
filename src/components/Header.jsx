@@ -1,10 +1,9 @@
 import './style/Header.css'
 
 import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
-import React from 'react';
 import logo from '../images/pokemon-icon.webp'
-import { useState } from 'react';
 
 const Header = () => {
 

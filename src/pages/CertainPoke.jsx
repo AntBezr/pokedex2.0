@@ -23,10 +23,8 @@ function CertainPoke() {
         if (res.data.sprites?.other.dream_world.front_default == null) { setImage(res.data.sprites?.other.home.front_default) }
         else { setImage(res.data.sprites?.other.dream_world.front_default) }
       });
-
-
     setIsLoading(false);
-  }, []);
+  }, [params.certainPoke]);
 
 
 

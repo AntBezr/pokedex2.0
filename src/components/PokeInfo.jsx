@@ -22,7 +22,7 @@ const PokeInfo = ({ pokeData }) => {
         })}
         <h2>Abilities:</h2>
 
-        {pokeData.abilities?.map((abilities, i) => { return (<AbilitiesDesc key={i} abilName={abilities.ability.name} url={abilities.ability.url} />) })}
+        {pokeData.abilities?.map((abilities) => { return (<AbilitiesDesc key={abilities.ability.name} abilName={abilities.ability.name} url={abilities.ability.url} />) })}
 
       </article>
     </div>
