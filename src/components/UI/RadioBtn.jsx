@@ -1,59 +1,24 @@
 import "./RadioBtn.css"
 
-import { useState } from "react";
-
 const RadioBtn = ({ stateGenerationChanger, selectedRadioBtn, updateSelectedBtn }) => {
 
-
+  const generationObj = [
+    { "limit": 151, "offset": 0 },
+    { "limit": 100, "offset": 151 },
+    { "limit": 135, "offset": 251 },
+    { "limit": 107, "offset": 386 },
+    { "limit": 156, "offset": 493 },
+    { "limit": 72, "offset": 649 },
+    { "limit": 88, "offset": 721 },
+    { "limit": 96, "offset": 809 },
+    { "limit": 10000, "offset": 905 }
+  ]
 
   const radioBtnHandler = (e) => {
-    switch (e.target.id) {
-      case "1": {
-        stateGenerationChanger({ "limit": 151, "offset": 0 })
-        updateSelectedBtn(1)
-      }
-        break;
-      case "2": {
-        stateGenerationChanger({ "limit": 100, "offset": 151 })
-        updateSelectedBtn(2)
-      }
-        break;
-      case "3": {
-        stateGenerationChanger({ "limit": 135, "offset": 251 })
-        updateSelectedBtn(3)
-      }
-        break;
-      case "4": {
-        stateGenerationChanger({ "limit": 107, "offset": 386 })
-        updateSelectedBtn(4)
-      }
-        break;
-      case "5": {
-        stateGenerationChanger({ "limit": 156, "offset": 493 })
-        updateSelectedBtn(5)
-      }
-        break;
-      case "6": {
-        stateGenerationChanger({ "limit": 72, "offset": 649 })
-        updateSelectedBtn(6)
-      }
-        break;
-      case "7": {
-        stateGenerationChanger({ "limit": 88, "offset": 721 })
-        updateSelectedBtn(7)
-      }
-        break;
-      case "8": {
-        stateGenerationChanger({ "limit": 96, "offset": 809 })
-        updateSelectedBtn(8)
-      }
-        break;
-      case "9": {
-        stateGenerationChanger({ "limit": 10000, "offset": 905 })
-        updateSelectedBtn(9)
-      }
-        break;
-    }
+
+    stateGenerationChanger(generationObj[Number(e.target.id) - 1])
+    updateSelectedBtn(Number(e.target.id))
+
   }
   return (
     <div className="radio">

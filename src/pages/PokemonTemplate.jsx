@@ -25,9 +25,9 @@ function PokemonTemplate(props) {
         });
         Promise.all(fetches).then((res) => {
           setData(res)
+          setIsLoding(false)
         })
       })
-    setIsLoding(false)
   }, [generation])
     ;
 
@@ -43,10 +43,7 @@ function PokemonTemplate(props) {
 
 
   if (isLoding) {
-    return (
-      <Loader />
-    )
-
+    return (<Loader />)
   }
   return (
     <div className='main'>

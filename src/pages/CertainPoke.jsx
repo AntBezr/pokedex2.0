@@ -31,17 +31,17 @@ function CertainPoke() {
 
 
   if (isLoading) {
-    return <Loader />;
-  }
-  return (
-    <div className="aboutPoke">
-      <ParallaxPoke
-        image={pokeImage}
-        name={pokeData.name}
-        pokeData={pokeData}
-      />
-    </div >
-  );
+    return (<Loader />)
+  } else
+    return (
+      <div className="aboutPoke">
+        <ParallaxPoke
+          image={pokeImage}
+          name={pokeData.name}
+          pokeData={pokeData}
+        />
+      </div >
+    );
 }
 
 export default CertainPoke;
