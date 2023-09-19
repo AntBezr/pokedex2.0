@@ -2,8 +2,9 @@
 
 :root {
   --whiteText: whitesmoke;
-  --yelow: #dac44a;
-  --darkYelow: #b9a740;
+  --yellow: #dac44a;
+  --darkYellow: #b9a740;
+  --transparentBlack: #00000099;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

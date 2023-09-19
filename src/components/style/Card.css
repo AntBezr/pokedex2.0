@@ -13,7 +13,7 @@
   width: 280px;
   height: 380px;
   border: solid black;
-  background: #28372fba;
+  background: var(--transparentBlack);
   color: var(--whiteText);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgb(27, 27, 27);

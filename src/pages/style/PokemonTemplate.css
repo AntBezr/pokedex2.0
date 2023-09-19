@@ -32,17 +32,28 @@
   align-items: center;
 }
 
-input {
+.search input {
   margin: 1rem;
   font-size: larger;
   border-radius: 0.5rem;
+  background: var(--transparentBlack);
+}
+
+.search input:focus {
+  font-weight: 600;
+  color: var(--whiteText);
+  border-color: var(--yellow);
 }
 
 .search {
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   .search {

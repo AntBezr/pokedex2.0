@@ -1,30 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import Card from '../components/UI/Card'
 import './style/PokemonTemplate.css';
-import axios from "axios"
-import Loader from '../components/UI/Loader';
 
+import React, { useEffect, useState } from 'react';
+
+import Card from '../components/UI/Card'
+import Loader from '../components/UI/Loader';
+import RadioBtn from '../components/UI/RadioBtn';
+import axios from "axios"
 
 function PokemonTemplate(props) {
   const [pokeData, setData] = useState([])
   const [isLoding, setIsLoding] = useState(false);
   const [searchInput, setSeatchInput] = useState('')
+  const [generation, setGeneration] = useState({ "limit": 151, "offset": 0 })
+  const [selectedRadioBtn, setSelectedRadioBtn] = useState(1)
 
 
   useEffect(() => {
     setIsLoding(true)
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0')
+      .get(`https://pokeapi.co/api/v2/pokemon?limit=${generation.limit}&offset=${generation.offset}`)
       .then(res => {
         const fetches = res.data.results.map((pokemon) => {
           return axios.get(pokemon.url).then((res) => res.data);
         });
         Promise.all(fetches).then((res) => {
           setData(res)
-          setIsLoding(false)
         })
       })
-  }, [])
+    setIsLoding(false)
+  }, [generation])
     ;
 
   const inputSearchHandler = (e) => {
@@ -49,6 +53,8 @@ function PokemonTemplate(props) {
       <div className='search'><h2>Find your pokemon:</h2>
         <input onChange={inputSearchHandler}></input>
       </div>
+      <RadioBtn stateGenerationChanger={setGeneration} selectedRadioBtn={selectedRadioBtn} updateSelectedBtn={setSelectedRadioBtn} />
+
 
       <div className='template'>
         {searchFilter.map(card => {
@@ -57,7 +63,7 @@ function PokemonTemplate(props) {
             <Card
               key={card.id}
               name={card.name}
-              image={card.sprites.other.dream_world.front_default}
+              image={card.sprites}
               type={card.types.map(types =>
                 (types.type.name)).join(' ')} />
           )
