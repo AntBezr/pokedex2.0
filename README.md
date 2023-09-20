@@ -10,11 +10,13 @@ Built with:
 
 - ReactJs
 - Css
+- axios
+
 
 ## Setup and usage
 
 Choose the generation of pokemon and the page will show all pokemons of this generation.
-Additionally if you looking for certain pokemon you can filter them by type or type its name in search bar
+Additionally if you looking for certain pokemon you can find it with it's name in search bar
 
 Live page will be [here]()
 
@@ -24,7 +26,6 @@ Live page will be [here]()
 ## Sources
 
 - [PokeApi](https://pokeapi.co/)
-- Some hooks usage and file stucture [Margit Tennosaar](https://github.com/margittennosaar)
 
 ## Authors and acknowledgment
 
@@ -33,3 +34,5 @@ Anton Bezruchenkov
 - GitHub @AntBezr
 - [LinkedIn](https://www.linkedin.com/in/antonbezruchenkov/)
 
+## Bages
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AntBezr_pokedex2.0&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AntBezr_pokedex2.0)

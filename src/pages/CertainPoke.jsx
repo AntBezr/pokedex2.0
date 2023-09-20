@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "../components/UI/Loader";
 import ParallaxPoke from "../components/ParallaxPoke";
 import axios from "axios";
+import pokeBall from '../images/pokeBall.png'
 import { useParams } from "react-router-dom";
 
 function CertainPoke() {
@@ -20,8 +21,12 @@ function CertainPoke() {
       .get(`https://pokeapi.co/api/v2/pokemon/${params.certainPoke}`)
       .then((res) => {
         setData(res.data);
-        if (res.data.sprites?.other.dream_world.front_default == null) { setImage(res.data.sprites?.other.home.front_default) }
-        else { setImage(res.data.sprites?.other.dream_world.front_default) }
+        if (res.data.sprites?.other.dream_world.front_default !== null) {
+          setImage(res.data.sprites?.other.dream_world.front_default)
+        }
+        else if (res.data.sprites?.other.home.front_default !== null) { setImage(res.data.sprites?.other.home.front_default) }
+        else if (res.data.sprites?.front_default !== null) { setImage(res.data.sprites?.front_default) }
+        else { setImage(pokeBall) }
       });
     setIsLoading(false);
   }, [params.certainPoke]);

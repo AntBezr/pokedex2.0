@@ -2,17 +2,21 @@ import '../style/Card.css'
 
 import { Link } from 'react-router-dom';
 import React from 'react';
+import pokeBall from "../../images/pokeBall.png"
 
 const Card = ({ name, image, type }) => {
   let pokeImage
 
-  if (image.other.dream_world.front_default == null) {
-    pokeImage = image.other.home.front_default
-  } else {
+  if (image.other.dream_world.front_default !== null) {
     pokeImage = image.other.dream_world.front_default
+
+  } else if (image.other.home.front_default !== null) {
+    pokeImage = image.other.home.front_default
   }
-  if (image.other.dream_world.front_default == null) {
+  else if (image.front_default !== null) {
     pokeImage = image.front_default
+  } else {
+    pokeImage = pokeBall
   }
   return (
     <div className='card'>
