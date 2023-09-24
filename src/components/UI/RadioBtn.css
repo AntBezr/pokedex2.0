@@ -8,11 +8,17 @@
   display: flex;
   flex-direction: row;
   color: var(--whiteText);
+  margin: 15px;
 }
 
-.radio label {
+.generations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio .generations label {
   width: auto;
-  height: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
