@@ -44,4 +44,4 @@ Anton Bezruchenkov
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AntBezr_pokedex2.0&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AntBezr_pokedex2.0)
 
 ## Live version
-![Static Badge](https://img.shields.io/badge/Pokedex%202.0?labelColor=%23000000&color=%23dac44a&link=https%3A%2F%2Fantbezr.github.io%2Fpokedex2.0%2F%23%2F)
+[![Static Badge](https://img.shields.io/badge/Pokedex%202.0?labelColor=%23000000&color=%23dac44a&link=https%3A%2F%2Fantbezr.github.io%2Fpokedex2.0%2F%23%2F)]
