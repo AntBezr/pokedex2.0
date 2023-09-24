@@ -22,7 +22,13 @@ Live page will be [here]()
 
 ## Screenshot
 
-<img width="1678" alt="Screenshot " src="h">
+<img width="1675" alt="Screenshot " src="https://github.com/AntBezr/pokedex2.0/assets/117649417/c17a4fa3-e6b6-40c6-82c5-f961fa30deb9">
+<img width="1677" alt="Screenshot " src="https://github.com/AntBezr/pokedex2.0/assets/117649417/ea0a7122-3d49-4dc8-96b3-a4641d8bb13c">
+<img width="1679" alt="Screenshot " src="https://github.com/AntBezr/pokedex2.0/assets/117649417/ad3890c6-a90a-4e15-b1c6-fac534dd9b84">
+<img width="1427" alt="Screenshot " src="https://github.com/AntBezr/pokedex2.0/assets/117649417/8b545179-7bdb-405e-a58d-57f770af48e8">
+<img width="342" alt="Screenshot mobile" src="https://github.com/AntBezr/pokedex2.0/assets/117649417/99c4d86f-9757-4646-8f21-f6ce6d24a160">
+<img width="342" alt="Screenshot mobile" src="https://github.com/AntBezr/pokedex2.0/assets/117649417/83ec9de0-aef0-40fb-85c5-a4308845d996">
+
 ## Sources
 
 - [PokeApi](https://pokeapi.co/)
@@ -36,3 +42,6 @@ Anton Bezruchenkov
 
 ## Badges
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AntBezr_pokedex2.0&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=AntBezr_pokedex2.0)
+
+## Live version
+![Static Badge](https://img.shields.io/badge/Pokedex%202.0?labelColor=%23000000&color=%23dac44a&link=https%3A%2F%2Fantbezr.github.io%2Fpokedex2.0%2F%23%2F)
