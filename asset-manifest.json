@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex2.0/static/css/main.5e2f2e82.css",
-    "main.js": "/pokedex2.0/static/js/main.cb8ed7bd.js",
+    "main.css": "/pokedex2.0/static/css/main.966ca16a.css",
+    "main.js": "/pokedex2.0/static/js/main.7ccb839e.js",
     "static/media/wallhaven-6q75gx.png": "/pokedex2.0/static/media/wallhaven-6q75gx.cb6a1769b85fd21220df.png",
     "static/media/wallhaven-1jq9r3.png": "/pokedex2.0/static/media/wallhaven-1jq9r3.77d4f4fbdd737ab2d891.png",
     "static/media/6mountains2.png": "/pokedex2.0/static/media/6mountains2.7ddadf63cfabba5b33c9.png",
@@ -15,11 +15,11 @@
     "static/media/pokeBall.png": "/pokedex2.0/static/media/pokeBall.bdf2390fd4c447c662f6.png",
     "static/media/pokemon-icon.webp": "/pokedex2.0/static/media/pokemon-icon.067f4b691b1415fd1128.webp",
     "index.html": "/pokedex2.0/index.html",
-    "main.5e2f2e82.css.map": "/pokedex2.0/static/css/main.5e2f2e82.css.map",
-    "main.cb8ed7bd.js.map": "/pokedex2.0/static/js/main.cb8ed7bd.js.map"
+    "main.966ca16a.css.map": "/pokedex2.0/static/css/main.966ca16a.css.map",
+    "main.7ccb839e.js.map": "/pokedex2.0/static/js/main.7ccb839e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e2f2e82.css",
-    "static/js/main.cb8ed7bd.js"
+    "static/css/main.966ca16a.css",
+    "static/js/main.7ccb839e.js"
   ]
 }
