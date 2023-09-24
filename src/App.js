@@ -1,16 +1,17 @@
 import './App.css';
-import Layout from './pages/Layout'
-import Home from './pages/Home';
-import PokemonTemplate from './pages/PokemonTemplate';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CertainPoke from './pages/CertainPoke';
-import NoMatch from './pages/NoMatch';
 
+import { HashRouter, Route, Routes } from 'react-router-dom';
+
+import CertainPoke from './pages/CertainPoke';
+import Home from './pages/Home';
+import Layout from './pages/Layout'
+import NoMatch from './pages/NoMatch';
+import PokemonTemplate from './pages/PokemonTemplate';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -20,7 +21,7 @@ function App() {
           </Route>
         </Routes>
 
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
