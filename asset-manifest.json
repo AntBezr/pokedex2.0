@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/pokedex2.0/static/css/main.5e2f2e82.css",
+    "main.js": "/pokedex2.0/static/js/main.cb8ed7bd.js",
+    "static/media/wallhaven-6q75gx.png": "/pokedex2.0/static/media/wallhaven-6q75gx.cb6a1769b85fd21220df.png",
+    "static/media/wallhaven-1jq9r3.png": "/pokedex2.0/static/media/wallhaven-1jq9r3.77d4f4fbdd737ab2d891.png",
+    "static/media/6mountains2.png": "/pokedex2.0/static/media/6mountains2.7ddadf63cfabba5b33c9.png",
+    "static/media/4rock.png": "/pokedex2.0/static/media/4rock.49bea9a735db28bbd401.png",
+    "static/media/5forest.png": "/pokedex2.0/static/media/5forest.69beb8843859ae74ff89.png",
+    "static/media/2field.png": "/pokedex2.0/static/media/2field.fe21fb632f89532053d0.png",
+    "static/media/7clouds.png": "/pokedex2.0/static/media/7clouds.9eba444c241dcae0a834.png",
+    "static/media/3lake2.png": "/pokedex2.0/static/media/3lake2.b255fcdc4573ce1ef045.png",
+    "static/media/1stones.png": "/pokedex2.0/static/media/1stones.6ccd62097aa89f874f9d.png",
+    "static/media/8sky2.png": "/pokedex2.0/static/media/8sky2.bf0098ce8bb204df3f75.png",
+    "static/media/pokeBall.png": "/pokedex2.0/static/media/pokeBall.bdf2390fd4c447c662f6.png",
+    "static/media/pokemon-icon.webp": "/pokedex2.0/static/media/pokemon-icon.067f4b691b1415fd1128.webp",
+    "index.html": "/pokedex2.0/index.html",
+    "main.5e2f2e82.css.map": "/pokedex2.0/static/css/main.5e2f2e82.css.map",
+    "main.cb8ed7bd.js.map": "/pokedex2.0/static/js/main.cb8ed7bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e2f2e82.css",
+    "static/js/main.cb8ed7bd.js"
+  ]
+}
