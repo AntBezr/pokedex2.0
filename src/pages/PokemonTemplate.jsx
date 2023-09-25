@@ -10,10 +10,10 @@ import axios from "axios"
 function PokemonTemplate(props) {
   const [pokeData, setData] = useState([])
   const [isLoding, setIsLoding] = useState(false);
-  const [searchInput, setSeatchInput] = useState('')
-  const [generation, setGeneration] = useState({ "limit": 151, "offset": 0 })
-  const [selectedRadioBtn, setSelectedRadioBtn] = useState(1)
-
+  const [searchInput, setSeatchInput] = useState('');
+  const [generation, setGeneration] = useState({ "limit": 151, "offset": 0 });
+  const [selectedRadioBtn, setSelectedRadioBtn] = useState(1);
+  const [goTopVisible, setGoTopVisible] = useState(false);
 
   useEffect(() => {
     setIsLoding(true)
@@ -28,8 +28,24 @@ function PokemonTemplate(props) {
           setIsLoding(false)
         })
       })
-  }, [generation])
-    ;
+  }, [generation]);
+
+  const toggleBtnVisability = () => {
+    let scroll = document.documentElement.scrollTop
+    if (scroll >= 300) {
+      setGoTopVisible(true)
+    } else {
+      setGoTopVisible(false)
+    }
+  }
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 
   const inputSearchHandler = (e) => {
     setSeatchInput((e.target.value.toLowerCase()))
@@ -40,7 +56,7 @@ function PokemonTemplate(props) {
 
   })
 
-
+  window.addEventListener('scroll', toggleBtnVisability);
 
   if (isLoding) {
     return (<Loader />)
@@ -65,6 +81,12 @@ function PokemonTemplate(props) {
                 (types.type.name)).join(' ')} />
           )
         })}
+        {goTopVisible ? <div className='backToTop' >
+          <button className='goToTopBtn' onClick={scrollTop}>
+            <span className="material-symbols-outlined">keyboard_double_arrow_up</span>
+          </button>
+          <h4>Back to top</h4>
+        </div> : ""}
 
       </div>
     </div>
